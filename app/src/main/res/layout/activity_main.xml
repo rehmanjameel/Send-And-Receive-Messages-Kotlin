@@ -71,4 +71,26 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="48dp" />
 
+    <!-- The retryApp() method will be called by this button.  -->
+    <Button
+        android:id="@+id/button_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Retry"
+        android:layout_below="@id/btnSendSMS"
+        android:text="Retry"
+        android:visibility="invisible"
+        android:onClick="retryApp"/>
+
+    <TextView
+        android:id="@+id/receivedSmsTextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSendSMS"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
 </RelativeLayout>
